@@ -3,3 +3,5 @@
 .Rdata
 .httr-oauth
 .DS_Store
+tests/testthat.R
+tests/testthat/test-spark_str_detect.R
