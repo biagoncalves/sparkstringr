@@ -66,10 +66,35 @@ All functions in sparkstringr start with `spark_str_` and take `(base,
 <!-- end list -->
 
 ``` r
-# spark_str_detect(iris_tbl, "Species", 'a')
+# spark_str_detect(iris_tbl, 'Species', 'a')
 ```
 
-### Incluir restante das funções
+  - `spark_str_count(base, column, pattern)` counts the number of
+    matches in a string:
+
+<!-- end list -->
+
+``` r
+# spark_str_count(iris_tbl, 'Species', 'a')
+```
+
+  - str\_sub
+  - str\_extract
+  - str\_match
+  - str\_length
+  - str\_pad
+  - str\_trunc
+  - str\_trim
+  - str\_replace
+  - str\_replace\_all (conferir)
+  - str\_to\_lower
+  - str\_to\_upper
+  - str\_to\_title
+  - str\_to\_sentence
+  - str\_c
+  - str\_dup
+  - str\_split\_fixed
+  - str\_order (conferir)
 
 You’ll still need to render `README.Rmd` regularly, to keep `README.md`
 up-to-date. `devtools::build_readme()` is handy for this. You could also

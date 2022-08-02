@@ -68,11 +68,33 @@ All functions in sparkstringr start with `spark_str_` and take `(base, 'column',
 ```
 
 ```{r spark_str_detect}
-# spark_str_detect(iris_tbl, "Species", 'a')
+# spark_str_detect(iris_tbl, 'Species', 'a')
+```
+
+- `spark_str_count(base, column, pattern)` counts the number of matches in a string:
+
+```{r spark_str_count}
+# spark_str_count(iris_tbl, 'Species', 'a')
 ```
 
 
-### Incluir restante das funções
+- str_sub
+- str_extract
+- str_match
+- str_length
+- str_pad
+- str_trunc
+- str_trim
+- str_replace
+- str_replace_all (conferir)
+- str_to_lower
+- str_to_upper
+- str_to_title
+- str_to_sentence
+- str_c
+- str_dup
+- str_split_fixed
+- str_order (conferir)
 
 
 You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
