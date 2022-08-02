@@ -2,7 +2,7 @@
 % Please edit documentation in R/spark_str_length.R
 \name{spark_str_length}
 \alias{spark_str_length}
-\title{The width of string in a Spark DataFrame's column.}
+\title{The length of a string in a Spark DataFrame's column.}
 \usage{
 spark_str_length(base, column)
 }

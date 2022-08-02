@@ -1,4 +1,4 @@
-#'  The width of string in a Spark DataFrame's column.
+#'  The length of a string in a Spark DataFrame's column.
 #'
 #' @description The width of string (i.e. number of code points, which generally equals the number of characters) in a Spark DataFrame's column.
 #'
