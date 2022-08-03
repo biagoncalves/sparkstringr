@@ -19,7 +19,7 @@ Negative values count backwards from the last character.}
 A new column called 'result' in the same Spark DataFrame with the changes desired upon the column given previously.
 }
 \description{
-Extract substrings from a Spark DataFrame's column.
+str_sub will recycle all arguments to be the same length as the longest argument. If any arguments are of length 0, the output will be a zero length character vector.
 }
 \details{
 Substrings are inclusive - they include the characters at both start and end positions. \code{spark_str_sub(string, 1, -1)} will return the complete substring, from the first character to the last.

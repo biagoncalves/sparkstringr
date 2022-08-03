@@ -1,5 +1,6 @@
 #'  Extract substrings from a Spark DataFrame's column.
 #'
+#' @description str_sub will recycle all arguments to be the same length as the longest argument. If any arguments are of length 0, the output will be a zero length character vector.
 #' @param base A Spark DataFrame.
 #' @param column A column in the Spark DataFrame.
 #' @param start,end Two integer vectors that give the position of the first character (defaults to first) and the last (defaults to last character), respectively.

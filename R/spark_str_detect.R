@@ -1,8 +1,9 @@
-#'  Detect the presence of a pattern match in a Spark DataFrame's column.
+#'  Detect the presence or absence of a pattern in a Spark DataFrame's column.
 #'
+#' @description Detect the presence of a pattern match in a Spark DataFrame's column.
 #' @param base A Spark DataFrame.
 #' @param column A column in the Spark DataFrame.
-#' @param pattern A pattern that must be detected.
+#' @param pattern Pattern to look for.
 #' @return A new column called 'result' in the same Spark DataFrame with the changes desired upon the column given previously.
 #' @examples
 #' iris_tbl <- copy_to(sc, iris, overwrite = TRUE)

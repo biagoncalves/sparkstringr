@@ -4,14 +4,14 @@
 \alias{spark_str_count}
 \title{Count the number of matches in a Spark DataFrame's column.}
 \usage{
-spark_str_count(base, column, pattern)
+spark_str_count(base, column, pattern = "")
 }
 \arguments{
 \item{base}{A Spark DataFrame.}
 
 \item{column}{A column in the Spark DataFrame.}
 
-\item{pattern}{A pattern that must be counted.}
+\item{pattern}{Pattern to look for.}
 }
 \value{
 A new column called 'result' in the same Spark DataFrame with the changes desired upon the column given previously.

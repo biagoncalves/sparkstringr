@@ -2,7 +2,7 @@
 % Please edit documentation in R/spark_str_detect.R
 \name{spark_str_detect}
 \alias{spark_str_detect}
-\title{Detect the presence of a pattern match in a Spark DataFrame's column.}
+\title{Detect the presence or absence of a pattern in a Spark DataFrame's column.}
 \usage{
 spark_str_detect(base, column, pattern)
 }
@@ -11,7 +11,7 @@ spark_str_detect(base, column, pattern)
 
 \item{column}{A column in the Spark DataFrame.}
 
-\item{pattern}{A pattern that must be detected.}
+\item{pattern}{Pattern to look for.}
 }
 \value{
 A new column called 'result' in the same Spark DataFrame with the changes desired upon the column given previously.
