@@ -78,13 +78,69 @@ All functions in sparkstringr start with `spark_str_` and take `(base,
 # spark_str_count(iris_tbl, 'Species', 'a')
 ```
 
-  - str\_sub
-  - str\_extract
-  - str\_match
-  - str\_length
-  - str\_pad
-  - str\_trunc
-  - str\_trim
+  - `spark_str_sub(base, column, start = 1L, end = -1L)` extracts
+    substrings:
+
+<!-- end list -->
+
+``` r
+# spark_str_sub(iris_tbl, 'Species', 1, 3)
+```
+
+  - `spark_str_extract(base, column, pattern)` returns the first pattern
+    match found in each string:
+
+<!-- end list -->
+
+``` r
+# spark_str_extract(iris_tbl, 'Species', 'a')
+```
+
+  - `spark_str_match(base, column, pattern)` returns the first pattern
+    match found in each string:
+
+<!-- end list -->
+
+``` r
+# spark_str_match(iris_tbl, 'Species', 'a')
+```
+
+  - `spark_str_length(base, column)` returns the length of a string:
+
+<!-- end list -->
+
+``` r
+# spark_str_length(iris_tbl, 'Species')
+```
+
+  - `spark_str_pad(base, column, width, side = c("left", "right",
+    "both"), pad = " ")` pads a string to constant width:
+
+<!-- end list -->
+
+``` r
+# spark_str_pad(iris_tbl, 'Species', 20, 'right', 'a')
+```
+
+  - `spark_str_trunc(base, column, width, side = c("right", "left",
+    "center"), ellipsis = "...")` truncates the width of strings,
+    replacing content with ellipsis:
+
+<!-- end list -->
+
+``` r
+# spark_str_trunc(iris_tbl, 'Species', 5, 'right', '...')
+```
+
+  - `spark_str_trim(base, column, side = c("both", "left", "right"))`
+    trims whitespace from start and/or end of a string:
+
+<!-- end list -->
+
+``` r
+# spark_str_trim(iris_tbl, 'Species', 'right')
+```
+
   - str\_replace
   - str\_replace\_all (conferir)
   - str\_to\_lower
