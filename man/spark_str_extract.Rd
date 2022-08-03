@@ -2,7 +2,7 @@
 % Please edit documentation in R/spark_str_extract.R
 \name{spark_str_extract}
 \alias{spark_str_extract}
-\title{Return the first pattern match found in each string, as a Spark DataFrame's column.}
+\title{Extract matching patterns from a Spark DataFrame's column.}
 \usage{
 spark_str_extract(base, column, pattern)
 }
@@ -11,7 +11,7 @@ spark_str_extract(base, column, pattern)
 
 \item{column}{A column in the Spark DataFrame.}
 
-\item{pattern}{A pattern to look for.}
+\item{pattern}{Pattern to look for.}
 }
 \value{
 A new column called 'result' in the same Spark DataFrame with the changes desired upon the column given previously.

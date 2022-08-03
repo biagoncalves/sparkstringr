@@ -2,7 +2,7 @@
 % Please edit documentation in R/spark_str_match.R
 \name{spark_str_match}
 \alias{spark_str_match}
-\title{Return the first pattern match found in each string, as a Spark DataFrame's column.}
+\title{Extract matched groups from a Spark DataFrame's column.}
 \usage{
 spark_str_match(base, column, pattern)
 }
@@ -11,13 +11,13 @@ spark_str_match(base, column, pattern)
 
 \item{column}{A column in the Spark DataFrame.}
 
-\item{pattern}{A pattern that must be detected.}
+\item{pattern}{Pattern to look for.}
 }
 \value{
 A new column called 'result' in the same Spark DataFrame with the changes desired upon the column given previously.
 }
 \description{
-Return the first pattern match found in each string, as a Spark DataFrame's column.
+Return the first pattern match found in each string, originally as a matrix with a column for each () group in pattern. \code{spark_str_extract} returns the result as a Spark DataFrame's column.
 }
 \examples{
 iris_tbl <- copy_to(sc, iris, overwrite = TRUE)

@@ -1,8 +1,9 @@
-#'  Return the first pattern match found in each string, as a Spark DataFrame's column.
+#'  Extract matched groups from a Spark DataFrame's column.
 #'
+#' @description Return the first pattern match found in each string, originally as a matrix with a column for each () group in pattern. `spark_str_extract` returns the result as a Spark DataFrame's column.
 #' @param base A Spark DataFrame.
 #' @param column A column in the Spark DataFrame.
-#' @param pattern A pattern that must be detected.
+#' @param pattern Pattern to look for.
 #' @return A new column called 'result' in the same Spark DataFrame with the changes desired upon the column given previously.
 #' @examples
 #' iris_tbl <- copy_to(sc, iris, overwrite = TRUE)
