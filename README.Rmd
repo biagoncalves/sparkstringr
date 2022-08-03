@@ -33,16 +33,22 @@ The functions from [stringr](https://github.com/tidyverse/stringr/) adapted in t
 - str_pad
 - str_trunc
 - str_trim
-- str_replace
-- str_replace_all (conferir)
-- str_to_lower
-- str_to_upper
-- str_to_title
-- str_to_sentence
-- str_c
-- str_dup
-- str_split_fixed
-- str_order (conferir)
+
+```{r modificar, include=FALSE}
+
+# - str_replace
+# - str_replace_all (conferir)
+# - str_to_lower
+# - str_to_upper
+# - str_to_title
+# - str_to_sentence
+# - str_c
+# - str_dup
+# - str_split_fixed
+# - str_order (conferir)
+
+```
+
 
 
 
@@ -119,16 +125,21 @@ All functions in sparkstringr start with `spark_str_` and take `(base, 'column',
 # spark_str_trim(iris_tbl, 'Species', 'right')
 ```
 
-- str_replace
-- str_replace_all (conferir)
-- str_to_lower
-- str_to_upper
-- str_to_title
-- str_to_sentence
-- str_c
-- str_dup
-- str_split_fixed
-- str_order (conferir)
+
+```{r funcoes_pra_adicionar, include=FALSE}
+
+# - str_replace
+# - str_replace_all (conferir)
+# - str_to_lower
+# - str_to_upper
+# - str_to_title
+# - str_to_sentence
+# - str_c
+# - str_dup
+# - str_split_fixed
+# - str_order (conferir)
+
+```
 
 
 

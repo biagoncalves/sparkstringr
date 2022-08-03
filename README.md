@@ -28,16 +28,6 @@ adapted in this package are:
   - str\_pad
   - str\_trunc
   - str\_trim
-  - str\_replace
-  - str\_replace\_all (conferir)
-  - str\_to\_lower
-  - str\_to\_upper
-  - str\_to\_title
-  - str\_to\_sentence
-  - str\_c
-  - str\_dup
-  - str\_split\_fixed
-  - str\_order (conferir)
 
 ## Installation
 
@@ -140,14 +130,3 @@ All functions in sparkstringr start with `spark_str_` and take `(base,
 ``` r
 # spark_str_trim(iris_tbl, 'Species', 'right')
 ```
-
-  - str\_replace
-  - str\_replace\_all (conferir)
-  - str\_to\_lower
-  - str\_to\_upper
-  - str\_to\_title
-  - str\_to\_sentence
-  - str\_c
-  - str\_dup
-  - str\_split\_fixed
-  - str\_order (conferir)
